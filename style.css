@@ -10,11 +10,12 @@ body {
   margin: 0;
 }
 
-#selection-screen #game-screen {
+#selection-screen, #game-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 10px;
 }
 
 .hero {
@@ -47,15 +48,14 @@ body {
 }
 
 .role.selected {
-  background: dodgerblue;
-  color: white;
-  border: none;
-  box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
-  transform: translateY(-5px);
+  background: #252a3d;
+  border: 2px solid dodgerblue;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.3);
+  transform: translateY(-8px);
 }
 
-#myButton {
- background: dodgerblue;
+#myButton, #game-screen button {
+  background: dodgerblue;
   color: white;
   border: none;
   padding: 15px 40px;
@@ -73,7 +73,7 @@ body {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transfrom: translateY(30px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -87,4 +87,26 @@ body {
 
 #status-message {
   animation: slideIn 0.8s ease-out 0.2s both;
+}
+
+#stats-container {
+  background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    min-width: 150px;
+    border-left: 4px solid dodgerblue; 
+    animation: slideIn 1s ease-out 0.4s both; 
+}
+
+.stat-row {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-row strong {
+    color: #aaa;
+    margin-right: 20px;
 }

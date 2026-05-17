@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playdoa</title>
+    <title>BattleSim</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,26 +11,26 @@
 
     <div id = "selection-screen">
         <section class="hero">
-            <h1>Choose your playstyle</h1>
-            <p>Yeah, so I'm going to need you to hurry up and pick a role</p>
+            <h1>Pick a class</h1>
+            <p>Go ahead and pick one, your not making it out anyways</p>
             <button id="myButton">Click me!</button>
         </section>
 
         <section class="roles">
 
             <div class="role">
-                <h2>Support</h2>
-                <p>Someone gotta do it</p>
+                <h2>Warrior</h2>
+                <p>High hp and defense</p>
             </div>
 
             <div class="role">
-                <h2>Attack</h2>
-                <p>Get your excuses ready</p>
+                <h2>Barbarian</h2>
+                <p>High damage and speed</p>
             </div>
 
             <div class="role">
-                <h2>Tank</h2>
-                <p>Don't do this to yourself</p>
+                <h2>Paladin</h2>
+                <p>Well-rounded stats with spellcasting</p>
             </div>
 
         </section>
@@ -39,6 +39,9 @@
     <div id = "game-screen" style = "display: none;">
         <h1>Game Starting....</h1>
         <p id = "status-message"></p>
+        
+        <div id = "stats-container"></div>
+
         <button onclick = "location.reload()">Back to Menu</button>
     </div>
     <script src="script.js"></script>
