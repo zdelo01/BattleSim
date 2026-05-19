@@ -30,20 +30,39 @@
 
             <div class="role">
                 <h2>Paladin</h2>
-                <p>Well-rounded stats with spellcasting</p>
+                <p>Well-rounded combatant</p>
             </div>
 
         </section>
     </div>
 
     <div id = "game-screen" style = "display: none;">
-        <h1>Game Starting....</h1>
+        <h1>Welcome to the Arena!</h1>
         <p id = "status-message"></p>
-        
-        <div id = "stats-container"></div>
+            <div class = "arena">
+                <!--Player-->
+                <div class = "gladiator">
+                    <h2 id = "player-title"> Hero </h2>
+                    <div id = "stats-container"></div>
+                </div>
+                
+                <div class = "vs"> VS </div>
 
-        <button onclick = "location.reload()">Back to Menu</button>
+                <!--Enemy-->
+                <div class = "gladiator">
+                    <h2 id = "enemy-title"> Enemy </h2>
+                    <div id = "enemy-stats-container"></div>
+                </div>
+            </div>
+            <!--Battle Log-->
+            <div id = "battle-log"></div>
+
+            <!--Controls-->
+            <div class = "controls">
+                <button id = "attack-btn"> ATTACK </button>
+                <button onclick = "location.reload()">FORFEIT</button>
+            </div>
     </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
